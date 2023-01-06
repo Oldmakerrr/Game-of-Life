@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F8F0A6D2296808EC00436535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6D1296808EC00436535 /* AppDelegate.swift */; };
 		F8F0A6D4296808EC00436535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6D3296808EC00436535 /* SceneDelegate.swift */; };
-		F8F0A6D6296808EC00436535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6D5296808EC00436535 /* ViewController.swift */; };
-		F8F0A6D9296808EC00436535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F0A6D7296808EC00436535 /* Main.storyboard */; };
+		F8F0A6D6296808EC00436535 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6D5296808EC00436535 /* GameViewController.swift */; };
 		F8F0A6DB296808EE00436535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F0A6DA296808EE00436535 /* Assets.xcassets */; };
 		F8F0A6DE296808EE00436535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F0A6DC296808EE00436535 /* LaunchScreen.storyboard */; };
+		F8F0A6E62968091D00436535 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6E52968091D00436535 /* Grid.swift */; };
+		F8F0A6E829680BC300436535 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6E729680BC300436535 /* GridView.swift */; };
+		F8F0A6EC2968434400436535 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F0A6EB2968434300436535 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8F0A6CE296808EC00436535 /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F0A6D1296808EC00436535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8F0A6D3296808EC00436535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8F0A6D5296808EC00436535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F8F0A6D8296808EC00436535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8F0A6D5296808EC00436535 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F8F0A6DA296808EE00436535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8F0A6DD296808EE00436535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8F0A6DF296808EE00436535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F0A6E52968091D00436535 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		F8F0A6E729680BC300436535 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		F8F0A6EB2968434300436535 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		F8F0A6D0296808EC00436535 /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
-				F8F0A6D1296808EC00436535 /* AppDelegate.swift */,
-				F8F0A6D3296808EC00436535 /* SceneDelegate.swift */,
-				F8F0A6D5296808EC00436535 /* ViewController.swift */,
-				F8F0A6D7296808EC00436535 /* Main.storyboard */,
+				F8F0A6F029684E2900436535 /* App */,
+				F8F0A6EF29684E2000436535 /* Controller */,
+				F8F0A6EE29684E1A00436535 /* Model */,
+				F8F0A6ED29684E1100436535 /* View */,
 				F8F0A6DA296808EE00436535 /* Assets.xcassets */,
 				F8F0A6DC296808EE00436535 /* LaunchScreen.storyboard */,
 				F8F0A6DF296808EE00436535 /* Info.plist */,
 			);
 			path = GameOfLife;
+			sourceTree = "<group>";
+		};
+		F8F0A6ED29684E1100436535 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0A6EB2968434300436535 /* Button.swift */,
+				F8F0A6E729680BC300436535 /* GridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8F0A6EE29684E1A00436535 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0A6E52968091D00436535 /* Grid.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F0A6EF29684E2000436535 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0A6D5296808EC00436535 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8F0A6F029684E2900436535 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0A6D1296808EC00436535 /* AppDelegate.swift */,
+				F8F0A6D3296808EC00436535 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				F8F0A6DE296808EE00436535 /* LaunchScreen.storyboard in Resources */,
 				F8F0A6DB296808EE00436535 /* Assets.xcassets in Resources */,
-				F8F0A6D9296808EC00436535 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F0A6D6296808EC00436535 /* ViewController.swift in Sources */,
+				F8F0A6EC2968434400436535 /* Button.swift in Sources */,
+				F8F0A6D6296808EC00436535 /* GameViewController.swift in Sources */,
 				F8F0A6D2296808EC00436535 /* AppDelegate.swift in Sources */,
 				F8F0A6D4296808EC00436535 /* SceneDelegate.swift in Sources */,
+				F8F0A6E829680BC300436535 /* GridView.swift in Sources */,
+				F8F0A6E62968091D00436535 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F8F0A6D7296808EC00436535 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8F0A6D8296808EC00436535 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F8F0A6DC296808EE00436535 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,9 +323,9 @@
 				INFOPLIST_FILE = GameOfLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,9 +350,9 @@
 				INFOPLIST_FILE = GameOfLife/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
