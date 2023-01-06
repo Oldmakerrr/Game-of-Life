@@ -6,6 +6,12 @@ One interacts with the Game of Life by creating an initial configuration and obs
 
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-01-06 at 16 54 21](https://user-images.githubusercontent.com/92182846/211017284-96b32f1a-4db3-490d-9db9-a059fa216eda.gif)
 
+<img src="https://user-images.githubusercontent.com/92182846/211017284-96b32f1a-4db3-490d-9db9-a059fa216eda.gif" width=30% height=30%"/>
+
+<p float="left">
+<img src="https://user-images.githubusercontent.com/92182846/205901816-d1d2c614-19c0-4f07-8061-527a9965a724.png" width=30% height=30%>
+ 
+</p>
 
 # Rules
 
