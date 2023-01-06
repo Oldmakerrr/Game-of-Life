@@ -4,10 +4,8 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. 
 One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
 
-![Simulator Screen Recording - iPhone 14 Pro - 2023-01-06 at 16 54 21](https://user-images.githubusercontent.com/92182846/211018441-68eb7b25-91eb-4821-be67-3b3694eae4ed.gif) 
-
-<p float="left">
-<img src="https://user-images.githubusercontent.com/92182846/211018441-68eb7b25-91eb-4821-be67-3b3694eae4ed.gif" width=60% height=60%>
+<p float="center">
+<img src="https://user-images.githubusercontent.com/92182846/211018441-68eb7b25-91eb-4821-be67-3b3694eae4ed.gif" width=50% height=50%>
 </p>
 
 # Rules
